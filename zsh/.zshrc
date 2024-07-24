@@ -16,10 +16,10 @@ zstyle :omz:plugins:ssh-agent agent-forwarding yes
 plugins=(
   git
   ssh-agent
+  fast-syntax-highlighting
+  zsh-syntax-highlighting
   zsh-autosuggestions
   zsh-autocomplete
-  zsh-syntax-highlighting
-  fast-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
