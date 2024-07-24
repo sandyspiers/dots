@@ -8,6 +8,7 @@ ide=(
     curl
     wget
     openssh
+    github-cli
 
     fd
     ripgrep
