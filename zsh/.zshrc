@@ -3,7 +3,7 @@ export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # Path to your Oh My Zsh and Zsh installation.
 export ZSH="/usr/share/oh-my-zsh"
-echo ZSH_CUSTOM="usr/share/zsh"
+export ZSH_CUSTOM="/usr/share/zsh"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
