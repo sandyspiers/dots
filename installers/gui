@@ -1,0 +1,11 @@
+#!/bin/bash
+
+gui=(
+    alacritty
+    firefox
+    spotify
+)
+
+# install
+./installers/yeah "${gui[@]}"
+./installers/stow "${gui[@]}"

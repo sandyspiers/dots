@@ -1,0 +1,10 @@
+#!/bin/bash
+
+echo -n " Stowing: "
+for pkg in "$@"; do
+    if [ -d "$pkg" ]; then
+        echo -n "$pkg "
+        # stow --target="$HOME" "$pkg"
+    fi
+done
+echo

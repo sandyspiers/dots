@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# install yay if it is not installed
+if ! command -v yay &>/dev/null; then
+    echo "Installing yay!"
+    cd ~ || exit
+
+    sudo pacman -Sy --noconfirm --needed git base-devel
+    git clone https://aur.archlinux.org/yay.git
+    cd yay || exit
+    makepkg --noconfirm -si
+
+    cd - || exit
+fi
+
+# install from arguments
+echo "Installing $@"
+exit
+yay -Syu --noconfirm
+yay -Sy --needed --noconfirm "$@"

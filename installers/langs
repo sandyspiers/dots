@@ -1,0 +1,10 @@
+#!/bin/bash
+
+langs=(
+    juliaup
+
+)
+
+# raw install
+./installers/yeah "${langs[@]}"
+./installers/stow "${langs[@]}"

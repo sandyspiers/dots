@@ -1,0 +1,9 @@
+[user]
+	name = sandyspiers
+	email = sandy.spiers@curtin.edu.au
+[credential]
+	helper = store
+[init]
+	defaultBranch = main
+[core]
+	editor = nvim
