@@ -15,6 +15,5 @@ fi
 
 # install from arguments
 echo "Installing $@"
-exit
 yay -Syu --noconfirm
 yay -Sy --needed --noconfirm "$@"
