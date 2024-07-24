@@ -1,3 +1,14 @@
 #!/bin/bash
 
-echo "to come..."
+gnome=(
+    extension-manager
+
+    qogir-icon-theme
+    full-dracula-theme-git
+
+    ttf-ubuntu-font-family
+    ttf-jetbrains-mono-nerd
+)
+
+# install
+./installers/yeah "${gnome[@]}"
