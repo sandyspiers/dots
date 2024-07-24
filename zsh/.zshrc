@@ -5,6 +5,9 @@ export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export ZSH="/usr/share/oh-my-zsh"
 export ZSH_CUSTOM="/usr/share/zsh"
 
+# ssh agent settings
+zstyle :omz:plugins:ssh-agent agent-forwarding yes
+
 # Which plugins would you like to load?
 # Standard plugins can be found in $ZSH/plugins/
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
