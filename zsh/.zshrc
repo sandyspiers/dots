@@ -5,6 +5,13 @@ export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 export ZSH="/usr/share/oh-my-zsh"
 export ZSH_CUSTOM="/usr/share/zsh"
 
+# check if we are in WSL2, and do whatever you need
+if [[ $(grep -i WSL /proc/version) ]]; then
+    # get the master Xorg server (e.g. for plotting things)
+    export DISPLAY=$(ip route list default | awk '{print $3}'):0
+    export LIBGL_ALWAYS_INDIRECT=1
+fi
+
 # ssh agent settings
 zstyle :omz:plugins:ssh-agent agent-forwarding yes
 
